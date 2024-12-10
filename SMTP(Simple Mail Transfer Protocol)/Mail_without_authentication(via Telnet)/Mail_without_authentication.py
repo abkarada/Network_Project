@@ -81,11 +81,11 @@ def send_email_via_telnet():
         tn.read_until(b"\n")
 
         # Gönderen e-posta adresi (MAIL FROM)
-        tn.write(b"MAIL FROM:<dextermorgan@gmail.com>\n")
+        tn.write(b"MAIL FROM:<sender@gmail.com>\n")
         tn.read_until(b"\n")
 
         # Alıcı e-posta adresi (RCPT TO)
-        tn.write(b"RCPT TO:<abdurrahmankaradag19@gmail.com>\n")
+        tn.write(b"RCPT TO:<vict@gmail.com>\n")
         tn.read_until(b"\n")
 
         # E-posta içeriği (DATA)
